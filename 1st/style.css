@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+}
+.menu {
+    display: flex;
+    list-style-type: none;
+}
+.brand {
+    font-family: PT Sans;
+    color: #4d4d4d;
+    text-transform: uppercase;
+    padding: 0.3em;
+}
+/* левый маржин исправить, скорее всего так не делают
+*/
+.menu li {
+    color: #4d4d4d;
+    margin: 1em;
+}
+.menu a {
+    font-family: PT Sans;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    color: #4d4d4d;
+}
+.menu a:hover {
+    color: #c9c9c9;
+}
+section {
+    display: flex;
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2019/05/28/19/29/plant-fern-4235915_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 2em;
+}
+.text_bg {
+    width: 50%;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin: 5em;
+}
+.text {
+    color: #fff;
+    padding: 1.4em 3.5em;
+    font-family: PT Sans;
+}
+.text_wrap {
+    width: 70%;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+.about_p {
+    width: 50%;
+    text-align: center;
+    color: #6a6a6a;
+    font-family: PT Sans;
+    padding-bottom: 1em;
+}
+.about img {
+    width: 50%;
+
+}
+.service {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    color: #6a6a6a;
+    font-family: PT Sans;
+    text-align: center;
+}
+.item h3 {
+    text-transform: uppercase;
+    margin: 0.7em;
+}
+.item p {
+    width: 70%;
+}
+.item img {
+    border-radius: 100%;
+    width: 70%;
+}
+.items {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.works {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.images {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+.images div {
+    margin: 1em 0.3em;
+}
+#watch {
+    font-family: PT Sans;
+    font-size: 19px;
+    font-weight: 600;
+    color: #4a8dc4;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categories {
+    font-family: sans-serif;
+    color: #6a6a6a;
+    font-size: 2.2em;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+.contacts_wrap {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.forma_wrap {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+.forma_wrap input {
+    height: 2em;
+    margin: 2px 0 15px 0;
+}
+.forma_wrap label {
+    font-weight: bold;
+    font-family: PT Sans;
+    color: #4d4d4d;
+}
+/*вставить button в тег form и добавить ховер
+*/
+.buttons {
+    border: 1px #c9c9c9 solid;
+    font-size: 16px;
+    font-family: PT Sans;
+    padding: 10px 55px;
+    background-color: #c9c9c9;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+.adress {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 35%;
+    height: 100px;
+    color: #6a6a6a;
+    font-family: PT Sans;
+}
+#submit_btn {
+    width: 30%;
+    height: 2.2em;
+    align-self: center;
+    border: 1px #c9c9c9 solid;
+    background-color: white;
+    margin: 1.2em 0 2.5em 0;
+    font-family: PT Sans;
+    font-size: 15px;
+    color: #4d4d4d;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    color: #6a6a6a;
+    margin-bottom: 1em;
+    font-size: 14px;
+    font-family: Pt Sans; 
+}
