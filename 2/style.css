@@ -1,0 +1,105 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 750px; /* надо другой способ управления высотой*/
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+.navigation {
+
+}
+.nav_list {
+    display: flex;
+    list-style-type: none;
+    margin-right: 3em;
+}
+.nav_list li {
+    margin: 4em 1em;
+}
+.nav_item {
+    text-decoration: none;
+    color: black;
+    text-transform: lowercase;
+    padding: 0.2em 0.8em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    /* добавить вертикальное выравнивание текста */
+}
+.nav_item:hover {
+    color: white;
+    background-color: black;
+    border-radius: 1em;
+}
+.btn {
+    align-self: center;
+    margin: 5em;
+}
+.btn_style {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    padding: 1em 3em;
+    border-radius: 2em;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: 100;
+}
+.text_style {
+    width: 1em;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    margin: auto;
+    writing-mode: tb-rl;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #b3b3b3;
+}
+.text_bold {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: black;
+}
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.card {
+    justify-self: flex-start;
+    text-align: center;
+    width: 3em;
+    margin: 1.1em 1em;
+}
+.card_style {
+    width: 2em;
+}
+.logo {
+    display: flex;
+    margin-left: 3em;
+}
+.logo_style {
+    text-decoration: none;
+    color: black;
+    font-family: 'Montserrat Black', arial;
+    text-transform: lowercase;
+    font-weight: 900;
+    margin: auto;
+}
