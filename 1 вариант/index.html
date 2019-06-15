@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--CDN бутстрап не туда вставлен-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f0052a91b1.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Web Design</title>
+</head>
+<body>
+    <!-- флекс контейнер, классы для карточки товара или тп.-->
+    <div class="container">
+        <nav class="navbar ">
+            <a class="navbar-brand text-dark m-0 font-weight-bold" href="#">Web<span class="text-danger">Design</span></a>
+            <!-- тут что то невнятное с классами первого текста.-->
+            <div class="p-3">
+                <p class="card-text">Создание идеального<br>сайта Вашей компании</p>
+            </div>
+            <div class="d-flex">
+                <img src="phone.png" alt="" class="mr-3 my-auto">
+                <div class="flex-column">
+                    <h6 class="card-text m-0">+7(343)200-22-92</h6>
+                    <p class="card-text">Звонок бесплатный</p>
+                </div>    
+            </div>
+            <div class="d-flex">
+                <img src="location.png" alt="" class="mr-3 my-auto">
+                <p class="card-text">г.Екатеринбург,<br> ул. 8 марта 22</p>
+            </div>
+        </nav>
+        <div class="d-flex bg-danger">
+            <ul class="nav nav-tabs w-100">
+                <li class="nav-item dropdown ml-4 ">
+                  <a class="nav-link active dropdown-toggle bg-danger text-white" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Услуги</a>
+                  <div class="dropdown-menu">
+                      <a class="dropdown-item bg-dark text-white" href="#">Создание сайта</a>
+                      <a class="dropdown-item bg-dark text-white" href="#">Продвижение сайтов</a>
+                      <a class="dropdown-item bg-dark text-white" href="#">Создание логотипов</a>
+                      <a class="dropdown-item bg-dark text-white" href="#">Создание логотипов</a>
+                  </div> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">О нас</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Портфолио</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Новости</a>
+                </li>
+            </ul>
+            <i class="p-3"><img src="search.png" alt="search"></i>
+            <i class="p-3"><img src="shopping-card.png" alt="card"></i>
+            <i class="p-3 mr-3"><img src="logout.png" alt="logout"></i>                  
+        </div>
+    </div>
+    <div class="container-fluid bg-header">
+        <div class="container">
+            <h5 class="font-weight-bold">Создай свой<br>идеальный сайт</h5>
+            <p>Мы поможем воплотить твои мечты в реальность</p>
+            <div class="d-flex">
+                <button type="button" class="btn btn-warning mr-3 mb-3">Оставить заявку</button>
+                <button type="button" class="btn btn-dark mr-3 mb-3">Подробнее</button>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex">
+        <div class="d-flex flex-column borderex col-5">
+            <h2 class="borderex card-title mt-5 font-weight-bold">О компании</h2>
+            <p class="mt-4 text-justify">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
+                высокотехнологичная концепция общестенного уклада не дает нам иного выбора, кроме определения поэтапного
+                и последовательного развития общества. Предварительные выводы неутешительны: глубокий уровень погружения
+                предполагает независимые способы реализации прогресса профессионального общества.</p>
+            <p>С учетом сложившейс международной обстановки, дальнейшее развитие различных форм деятельности требует алализа
+                соответствующих условий активизации.</p>
+            <p>Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта:
+                высокотехнологичная концепция общественного уклада не дает нам иного выбора, кроме определения поэтапного и
+                и последовательного развития общества. Предварительные выводы неутешительны: глубокий уровень погружения
+                предполагает независимые способы реализации прогресса профессионального сообщества.</p>
+        </div>
+        <div class="d-flex flex-column">
+                <div class="d-flex h-50 text-center align-items-center">
+                        <div class="card">
+                            <p class="about-title">3912</p>
+                            <p class="card-subtitle">позиций</p>
+                            <p class="card-text">Имеется на Ваш выбор для создания сайта</p>
+                        </div>
+                        <div class="card">
+                            <p class="about-title">5659</p>
+                            <p class="card-subtitle">заказчиков</p>
+                            <p class="card-text">Обращаются к нам на протяжении нескольких лет</p>
+                        </div>
+                        <div class="card">
+                            <p class="about-title">25</p>
+                            <p class="card-subtitle">специалистов</p>
+                            <p class="card-text">Своего дела готовы ежедневно проконсультировать Вас</p>
+                        </div>
+                    </div>
+                    <div class="d-flex h-50 text-center align-items-stretch">
+                            <div class="d-flex flex-column my-auto borderex">
+                                <p class="about-title">456</p>
+                                <p class="card-subtitle">элементов</p>
+                                <p class="card-text">Имеется на в нашем портфолио</p>
+                            </div>
+                            <div class="d-flex flex-column my-auto borderex">
+                                <p class="about-title">22</p>
+                                <p class="card-subtitle"></p>
+                                <p class="card-text">Мы работаем именно для Вас</p>
+                            </div>
+                            <div class="d-flex flex-column my-auto borderex">
+                                <p class="about-title">892</p>
+                                <p class="card-subtitle">специалистов</p>
+                                <p class="card-text">Имеется на Ваш выбор для создания индивидуального сайта</p>
+                            </div>
+                        </div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+ * {
+     margin: 0px;
+     padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+ }
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+}
+/* поработать с позиционированием фона */
+.bg-header {
+    background-image: url("london-3529954_1920.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: -1.8em;
+    padding-top: 10em;
+    padding-bottom: 15em;
+    z-index: -1;
+    position: relative;
+    
+}
+.container-fluid {
+
+}
+.container {
+}
+.borderex {
+    border: 1px solid red;
+}
+.about-title {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #e60000;
+    text-shadow: 2px 3px 3px #c5c5c5;
+}
