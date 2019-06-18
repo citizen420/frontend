@@ -24,8 +24,17 @@
 }
 .container {
 }
-.borderex {
+.bdred {
     border: 1px solid red;
+    
+}
+.bdblue {
+    border: 2px solid blueviolet;
+    
+}
+.bdgreen {
+    border: 1px solid greenyellow;
+    
 }
 .about-title {
     font-size: 4em;
@@ -33,4 +42,22 @@
     font-family: 'Open Sans', sans-serif;
     color: #e60000;
     text-shadow: 2px 3px 3px #c5c5c5;
+}
+.text-icons {
+    font-size: 4em;
+    padding: 0.5em;
+}
+.advantages {
+    background-image: url("bg-our-advantages.jpg");
+    
+}
+.btn-see-all {
+   background-color: #e60000;
+   box-shadow: 3px 3px #888
+}
+.bg-form {
+    background-image: url("bg-form.png");
+}
+.contacts {
+    background-color: #2c2c2c;
 }
