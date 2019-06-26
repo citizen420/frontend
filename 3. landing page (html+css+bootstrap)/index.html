@@ -4,38 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--CDN бутстрап не туда вставлен-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/f0052a91b1.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Web Design</title>
 </head>
 <body>
-    <!-- флекс контейнер, классы для карточки товара или тп.-->
     <nav class="container">
-        <div class="navbar pl-0">
-            <a class="navbar-brand text-dark" href="#">Web<span>Design</span></a>
-            <!-- тут что то невнятное с классами первого текста. 
-                поменять тег див на семантически верный - nav-->
-            <div class="">
-                <p class="my-auto p-3">Создание идеального<br>сайта Вашей компании</p>
+        <div class="navbar pl-0 p-0">
+            <a class="navbar-brand text-dark pt-4 pb-4 col-5 col-md-2 col-lg-3 pl-0" href="#">Web<span>Design</span></a>
+            <div class="row col-6 col-md-9 col-lg-3 col-xl-2 m-0 pl-lg-0 pr-lg-0">
+                <p class="my-auto text-left">Создание идеального сайта Вашей компании</p>
             </div>
-            <div class="row">
-                <img src="img/phone.png" alt="" class="mr-3 my-auto">
-                <div class="d-flex flex-column">
-                    <h6 class="card-text m-0">+7(343)200-22-92</h6>
+            <div class="row text-left justify-content-center justify-content-lg-end col-6 col-lg-3 col-xl-2 m-0 p-0 text-left mb-3 mb-lg-0">
+                <img src="img/phone.png" alt="phone" class="mr-2 mr-sm-3 mr-lg-2 my-auto ">
+                <div class="d-flex flex-column p-0 m-0">
+                    <h5 class="font-weight-bold m-0">+7(343)200-22-92</h5>
                     <p class="card-text">Звонок бесплатный</p>
                 </div>
             </div>
-            <div class="d-flex">
-                <img src="img/location.png" alt="" class="mr-3 my-auto">
-                <p class="card-text">г.Екатеринбург,<br> ул. 8 марта 22</p>
+            <div class="row col-6 col-lg-2 justify-content-center justify-content-lg-end m-0 p-0 mb-3 mb-lg-0">
+                <img src="img/location.png" alt="location" class="mr-3 my-auto">
+                <p class="card-text m-0 pl-3 pr-3 pl-sm-0 pr-sm-0">г.Екатеринбург,<br> ул. 8 марта 22</p>
             </div>
         </div>
-        <!--подвинуть выпадающее меню, сделать тогглер, заменить шрифт, какой то бордер боттом у навигации - убрать-->
         <div class="nav orange p-0 shadow-box">
             <ul class="nav nav-tabs">
                 <li class="nav-item dropdown ml-4 p-3">
@@ -64,19 +56,19 @@
                 </li>
             </ul>
             <div class="ml-auto mr-4 d-flex align-items-center">
-                <i class="col-4"><img src="img/search.png" alt="search"></i>
-                <i class="col-4"><img src="img/shopping-card.png" alt="card"></i>
-                <i class="col-4"><img src="img/logout.png" alt="logout" ></i>
+                <a href="#" class="col-4"><img src="img/search.png" alt="search"></a>
+                <a href="#" class="col-4"><img src="img/shopping-card.png" alt="card"></a>
+                <a href="#" class="col-4"><img src="img/logout.png" alt="logout" ></a>
             </div>   
         </div>
     </nav>
     <div class="container-fluid bg-header">
-        <div class="container pl-5 open-sans">
-            <h2 class="font-weight-bold mt-3">Создай свой<br>идеальный сайт</h2>
-            <p class="font-weight-bold mt-3 mb-5">Мы поможем воплотить твои мечты в реальность</p>
-            <div class="d-flex">
-                <button type="button" class="btn orange mr-3 mb-3">Оставить заявку</button>
-                <button type="button" class="btn grey mr-3 mb-3">Подробнее</button>
+        <div class="container pl-5">
+            <p class="font-weight-bold create-site">Создай свой<br>идеальный сайт</p>
+            <p class="font-weight-bold mb-5">Мы поможем воплотить твои мечты в реальность</p>
+            <div class="row pl-3">
+                <button type="button" class="btn orange col-xl-2 col-lg-3 col-md-3 col-sm-5 col-7">Оставить заявку</button>
+                <button type="button" class="btn bg-dark text-white col-xl-2 col-lg-3 col-md-3 col-sm-5 col-7 ml-0 ml-sm-3">Подробнее</button>
             </div>
         </div>
     </div>
@@ -299,18 +291,18 @@
              деятельности требует ующих условий активизации.</p>
         <button class="btn btn-lg m-4 orange shadow-box">Посмотреть все фото</button>
     </div>
-    <div class="container-fluid bdblue reviews" id="reviews">
-        <div class="container pt-5 pb-5 bdgreen text-center">
+    <div class="container-fluid reviews" id="reviews">
+        <div class="container pt-5 pb-5 text-center">
             <h3 class=" pb-3 text-center font-weight-bold">Отзывы</h3>
-            <div class="row mb-5 align-items-center justify-content-between">
-                <img src="img/feedback1.png" alt="customer" class="col-2 d-block  p-0">
-                <div class="col-10 text-left ">
+            <div class="row mb-0 mb-md-5 mt-0 mt-md-5 align-items-center justify-content-center">
+                <img src="img/feedback1.png" alt="customer" class="mb-3 mb-lg-0 col-6 col-xl-2 col-lg-3 col-md-4 d-block  p-0">
+                <div class="col-xl-10 col-lg-9 col-md-10 col-11 text-left">
                     <div class="row relative align-items-center justify-content-end">
                             <img src="img/comment-bubble.png" alt="comment" class="relative">
-                            <div class="absolute pl-4 bubble col-11 ">       
-                                <h5 class="text-width-bold  mb-0 pt-1">Иванова Марина Ивановна</h5>
-                                <h6 class="text-muted mb-0 pt-1">г. Екатеринбург,<span class="orange-text"> 22.12.2018</span></h6>
-                                <p class="">Высокий уровень вовлечения представителей целевой аудитории является четким 
+                            <div class="absolute pl-4 bubble col-11">       
+                                <h5 class="font-weight-bold mb-0 pt-1">Иванова Марина Ивановна</h5>
+                                <h6 class="text-muted mb-0 pt-2">г. Екатеринбург,<span class="orange-text"> 22.12.2018</span></h6>
+                                <p class="pt-2 mr-4">Высокий уровень вовлечения представителей целевой аудитории является четким 
                                     доказательством простого факта: высокотехнологичная концепция общественного уклада не дает нам
                                     иного выбора, кроме определения поэтапного и последовательного развития общества. Предварительные
                                     выводы неутешительны: глубокий уровень погружения предполагает независимые способы реализации прогресса
@@ -320,14 +312,14 @@
                     </div>   
                 </div>
             </div>
-            <div class="row mb-5 align-items-center justify-content-between"> 
-                    <div class="col-10 text-left ">
-                        <div class="row relative align-items-center justify-content-end">
-                                <img src="img/comment-bubble-right.png" alt="comment" class="relative">
-                                <div class="absolute pl-4 bubble col-11 ">       
-                                    <h5 class="text-width-bold  mb-0 pt-1">Иванова Марина Ивановна</h5>
-                                    <h6 class="text-muted mb-0 pt-1">г. Екатеринбург,<span class="orange-text"> 22.12.2018</span></h6>
-                                    <p class="">Высокий уровень вовлечения представителей целевой аудитории является четким 
+            <div class="row mb-0 mb-md-5 align-items-center justify-content-center"> 
+                    <div class="col-xl-10 col-lg-9 col-md-10 col-11 text-left">
+                        <div class="row relative align-items-center justify-content-start">
+                                <img src="img/comment-bubble-right.png" alt="comment" class="relative ">
+                                <div class="absolute pl-5 bubble col-11 pr-4"> 
+                                    <h5 class="font-weight-bold mb-0 pt-1">Иванова Анна Ивановна</h5>
+                                    <h6 class="text-muted mb-0 pt-2">г. Екатеринбург,<span class="orange-text"> 22.12.2018</span></h6>
+                                    <p class="pt-2">Высокий уровень вовлечения представителей целевой аудитории является четким 
                                         доказательством простого факта: высокотехнологичная концепция общественного уклада не дает нам
                                         иного выбора, кроме определения поэтапного и последовательного развития общества. Предварительные
                                         выводы неутешительны: глубокий уровень погружения предполагает независимые способы реализации прогресса
@@ -336,17 +328,17 @@
                                 </div>
                         </div>   
                     </div>
-                    <img src="img/feedback1.png" alt="customer" class="col-2 d-block  p-0">
+                    <img src="img/feedback2.png" alt="customer" class="mt-5 mt-md-0 col-6 col-xl-2 col-lg-3 col-md-4 d-block p-0">
                 </div>
-                <div class="row mb-5 align-items-center justify-content-between">
-                        <img src="img/feedback1.png" alt="customer" class="col-2 d-block  p-0">
-                        <div class="col-10 text-left ">
+                <div class="row mb-5 align-items-center justify-content-center">
+                        <img src="img/feedback3.png" alt="customer" class="mb-3 mb-lg-0 col-6 col-xl-2 col-lg-3 col-md-4 d-block p-0">
+                        <div class="col-xl-10 col-lg-9 col-md-10 col-11 text-left">
                             <div class="row relative align-items-center justify-content-end">
                                     <img src="img/comment-bubble.png" alt="comment" class="relative">
-                                    <div class="absolute pl-4 bubble col-11 ">       
-                                        <h5 class="text-width-bold  mb-0 pt-1">Иванова Марина Ивановна</h5>
-                                        <h6 class="text-muted mb-0 pt-1">г. Екатеринбург,<span class="orange-text"> 22.12.2018</span></h6>
-                                        <p class="">Высокий уровень вовлечения представителей целевой аудитории является четким 
+                                    <div class="absolute pl-4 bubble col-11">       
+                                        <h5 class="font-weight-bold  mb-0 pt-1">Иванов Иван Иванович</h5>
+                                        <h6 class="text-muted mb-0 pt-2">г. Екатеринбург,<span class="orange-text"> 22.12.2018</span></h6>
+                                        <p class="pt-2 mr-4">Высокий уровень вовлечения представителей целевой аудитории является четким 
                                             доказательством простого факта: высокотехнологичная концепция общественного уклада не дает нам
                                             иного выбора, кроме определения поэтапного и последовательного развития общества. Предварительные
                                             выводы неутешительны: глубокий уровень погружения предполагает независимые способы реализации прогресса
@@ -359,45 +351,51 @@
             <button class="btn orange btn-lg btn-see-all">Все отзывы</button>
         </div>
     </div>
-<div class="container stage-work pb-5 bdgreen">
+<div class="container pb-5">
     <h3 class="m-5 text-center font-weight-bold">Этапы работы</h3>
-    <div class="d-flex flex-column">
-            <div class="col-sm-5 ml-5 text-right align-self-start bdgreen stage1">
-                <h4 class="bdblue">Оформление заявки</h4>
+    <div class="row justify-content-center">
+        <div class="row col-lg-10 stage-bg stage1 justify-content-start">
+            <div class="col-md-5 col-sm-11 mt-5 mt-md-0 text-center text-md-right mx-auto ml-md-5">
+                <h4 class="font-weight-bold">Оформление заявки</h4>
                 <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
                     доказательством простого факта: высокотехнологичная концепция общественного уклада не дает нам
                     иного выбора, кроме определения поэтапного и последовательного</p>
             </div>
-        <div class="col-sm-5 mr-5 text-left align-self-end bdgreen stage2">
-                <h4>Предоставление материалов</h4>
-                <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
-                    доказательством простого факта: высокотехнологичная концепция общественного уклада
-                    не дает нам иного выбора, кроме определения поэтапного и последовательного развития
-                общества. Предварительные выводы неутешительны: глубокий уровень погружения</p>
-            </div>
-        <div class="col-sm-5 ml-5 text-right align-self-start stage3">
-            <h4>Создание сайта</h4>
-            <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
-                доказательством простого факта: высокотехнологичная концепция общественного уклада
-                не дает нам иного выбора, кроме определения поэтапного и последовательного развития
-            общества. Предварительные выводы неутешительны: глубокий уровень погружения</p>
         </div>
-        <div class="col-sm-5 mr-5 stage4 text-left align-self-end">
-            <h4>Сдача готовой работы</h4>
-            <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
-                доказательством простого.</p>
+        <div class="row col-lg-10 stage-bg stage2 justify-content-end">
+            <div class="col-md-5 col-sm-11 mt-5 mt-md-0 text-center text-md-left mx-auto mr-md-5">
+                <h4 class="font-weight-bold">Предоставление материалов</h4>
+                <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
+                    доказательством простого факта: высокотехнологичная концепция.</p>
+            </div>
+        </div>
+        <div class="row col-lg-10 stage-bg stage3 justify-content-start">
+            <div class="col-md-5 col-sm-11 mt-5 mt-md-0 text-center text-md-right mx-auto ml-md-5">
+                <h4 class="font-weight-bold">Создание сайта</h4>
+                <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
+                    доказательством простого факта: высокотехнологичная концепция общественного уклада не дает нам
+                    иного выбора, кроме определения поэтапного и последовательного развития общества. Предварительные
+                    выводы неутешительны: глубокий уровень погружения</p>
+            </div>
+        </div>
+        <div class="row col-lg-10 col-12 stage4 justify-content-end">
+            <div class="col-md-5 col-sm-11 mt-5 mt-md-0 text-center text-md-left mx-auto mr-md-5">
+                <h4 class="font-weight-bold">Сдача готовой работы</h4>
+                <p>Высокий уровень вовлечения представителей целевой аудитории является четким 
+                    доказательством простого</p>
+            </div>
         </div>
     </div>
 </div>
-<div class="container-fluid bg-form m-0 p-0">
+<div class="container-fluid bg-form p-0">
     <div class="container-fluid adv2 text-white">
-        <h2 class=" text-center p-5">Оставьте заявку</h2>
-        <p class="text-center ">и мы свяжеимя с вами в ближайшее время!</p>
-        <form action="" class=" d-flex flex-column align-items-center" >
-                <input type="name" class="form-control col-4 mb-4 p-3 name-ph" placeholder="Ваше имя">
-                <input type="" class="form-control col-4 mb-4 p-3 phone-ph" placeholder="Ваш телефон">
-                <input type="email" class="form-control col-4 mb-4 p-3 mail-ph" placeholder="Ваш E-mail">
-                <div class="">
+        <h2 class="text-center pt-5 pb-2">Оставьте заявку</h2>
+        <p class="text-center">и мы свяжемcя с вами в ближайшее время!</p>
+        <form action="" class="pt-4 d-flex flex-column align-items-center">
+                <input type="name" class="form-control col-7 col-md-6 col-lg-5 col-xl-4  mb-4 p-3 name-ph" placeholder="Ваше имя">
+                <input type="" class="form-control col-7 col-md-6 col-lg-5 col-xl-4 mb-4 p-3 phone-ph" placeholder="Ваш телефон">
+                <input type="email" class="form-control col-7 col-md-6 col-lg-5 col-xl-4 mb-4 p-3 mail-ph" placeholder="Ваш E-mail">
+                <div class="col-7 col-md-6 col-lg-5 col-xl-4 pl-5 text-left">
                         <input type="checkbox" class="form-check-input" id='checkbox'>
                         <label class="form-check-label" for='checkbox'>Я согласен(а) га обработку моих персональных данных.</label>
                 </div>
@@ -407,56 +405,56 @@
     </div>
 </div>
 <div class="container pt-5 pb-5" id="news">
-    <h3 class="text-center font-weight-bold">Новости</h3>
-    <div class="row">
-    <div class="col-sm-2 p-0">
+    <h3 class="text-center font-weight-bold pb-3">Новости</h3>
+    <div class="row justify-content-center">
+    <div class="col-xl-2 col-lg-4 col-md-6 col-9 p-0 pt-4 pt-lg-0 text-center">
         <img src="img/news1.png" alt="news">
-        <div class="news">
+        <div class="pl-2 pr-2 pl-xl-1 pr-xl-3 text-xl-left">
             <p class="text-muted m-0 pt-1 ">15 августа 2018 г</p>
             <p class="font-weight-bold m-0">Создание нового сайта именно для Вас</p>
             <p class="pt-1 grad-opac">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
                 простого факта: высокотехнологичная</p>
         </div>
     </div>
-    <div class="col-sm-2 p-0">
+    <div class="col-xl-2 col-lg-4 col-md-6 col-9 p-0 pt-4 pt-lg-0 text-center">
         <img src="img/news2.png" alt="news">
-        <div class="news">
+        <div class="pl-2 pr-2 pl-xl-1 pr-xl-3 text-xl-left">
             <p class="text-muted m-0 pt-1 ">12 августа 2018 г</p>
             <p class="font-weight-bold m-0">Нам 10 лет!</p>
             <p class="pt-1 grad-opac">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
                 простого факта: высокотехнологичная</p>
         </div>
     </div>
-    <div class="col-sm-2 p-0">
+    <div class="col-xl-2 col-lg-4 col-md-6 col-9 p-0 pt-4 pt-lg-0 text-center">
         <img src="img/news3.png" alt="news">
-        <div class="news">
+        <div class="pl-2 pr-2 pl-xl-1 pr-xl-3 text-xl-left">
             <p class="text-muted m-0 pt-1 ">10 августа 2018 г</p>
             <p class="font-weight-bold m-0">Если у Вас есть вопросы, напишите нам</p>
             <p class="pt-1 grad-opac">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
                 простого факта: высокотехнологичная</p>
         </div>
     </div>
-    <div class="col-sm-2 p-0">
+    <div class="col-xl-2 col-lg-4 col-md-6 col-9 p-0 pt-4 pt-lg-0 text-center">
         <img src="img/news4.png" alt="news">
-        <div class="news">
+        <div class="pl-2 pr-2 pl-xl-1 pr-xl-3 text-xl-left">
             <p class="text-muted m-0 pt-1 ">9 августа 2018 г</p>
             <p class="font-weight-bold m-0">Создание нового сайта именно для Вас</p>
             <p class="pt-1 grad-opac">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
                 простого факта: высокотехнологичная</p>
         </div>
     </div>
-    <div class="col-sm-2 p-0">
+    <div class="col-xl-2 col-lg-4 col-md-6 col-9 p-0 pt-4 pt-lg-0 text-center">
         <img src="img/news5.png" alt="news">
-        <div class="news">
+        <div class="pl-2 pr-2 pl-xl-1 pr-xl-3 text-xl-left">
             <p class="text-muted m-0 pt-1 ">5 августа 2018 г</p>
             <p class="font-weight-bold m-0">Новый офис..</p>
             <p class="pt-1 grad-opac">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
                 простого факта: высокотехнологичная</p>
         </div>
     </div>
-    <div class="col-sm-2 p-0">
+    <div class="col-xl-2 col-lg-4 col-md-6 col-9 p-0 pt-4 pt-lg-0 text-center">
         <img src="img/news6.png" alt="news">
-        <div class="news">
+        <div class="pl-2 pr-2 pl-xl-1 pr-xl-3 text-xl-left">
             <p class="text-muted m-0 pt-1 ">1 августа 2018 г</p>
             <p class="font-weight-bold m-0">Создание нового сайта именно для Вас</p>
             <p class="pt-1 grad-opac">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством
@@ -469,7 +467,7 @@
     <div class="row">
         <div class="col-sm-6 mt-5 mb-5 p-0">
             <div class="row justify-content-center p-5">
-                <div class="col-sm-6 pl-5">
+                <div class="col-xl-6 col-lg-8  pl-xl-5">
                     <h3 class="font-weight-bold pb-3">Контакты</h3>
                     <h6 class="d-flex pt-3"><img src="img/smphone.png" alt="phone" class="pr-3">+7(922)222-22-22</h6>
                     <a href="mailto:uidkkn@mail.ru" id='mailto'><h6 class="pb-3"><img src="img/mail.png" alt="mail" class="pr-3">uidkkn@mail.ru</h6></a>
@@ -489,47 +487,49 @@
 </div>
 <div class="container text-center mt-5 d-flex flex-column p-0">
     <h3 class="font-weight-bold pb-3 ">Партнеры</h3>
-    <p class="col-9 align-self-center  mb-5">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
+    <p class="col-8 align-self-center  mb-5">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
             факта: высокотехнологичная концепция общественного уклада не дает нам иного выбора, кроме
             определения поэтапного</p>
-    <div class="carousel slide mb-5 " data-ride='carousel' id="carousel">
-        <div class="carousel-inner p-3">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center img-fluid">
-                    <div class="megafon col-4 p-4"></div>
-                    <div class="tele2 col-4 p-4"></div>
-                    <div class="mts col-4 p-4"></div>
+    <div class="row justify-content-center">
+        <div class="carousel slide mb-5 col-lg-12" data-ride='carousel' id="carousel">
+            <div class="carousel-inner p-3">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-around img-fluid">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/megafon.png" alt="megafon">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/tele2.png" alt="tele2">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/mts.png" alt="mts">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around img-fluid">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/tele2.png" alt="tele2">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/megafon.png" alt="megafon">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/mts.png" alt="mts">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around img-fluid">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/mts.png" alt="mts">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/megafon.png" alt="megafon">
+                        <img class="col-lg-auto col-sm-3 col-4 my-lg-0 my-auto" src="img/tele2.png" alt="tele2">
+                    </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-around img-fluid">
-                    <img class="" src="img/tele2.png" alt="tele2">
-                    <img class="" src="img/megafon.png" alt="megafon">
-                    <img class="" src="img/mts.png" alt="mts">
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-around img-fluid">
-                    <img class="" src="img/mts.png" alt="mts">
-                    <img class="" src="img/megafon.png" alt="megafon">
-                    <img class="" src="img/tele2.png" alt="tele2">
-                </div>
-            </div>
+            <a href="#carousel" class="carousel-control-prev" role="button"  data-interval="1000" data-slide="prev">
+                <span class="prev p-4 " aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button"  data-interval="1000" data-slide="next">
+                <span class="next p-4" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-        <a href="#carousel" class="carousel-control-prev" role="button"  data-interval="1000" data-slide="prev">
-            <span class="prev p-4 " aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carousel" role="button"  data-interval="1000" data-slide="next">
-            <span class="next p-4" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
 </div>
 <footer class="container-fliud contacts text-white">
     <div class="container pt-4"> 
         <div class="row justify-content-center">
-            <ul class="nav col-10 pt-3  justify-content-around font-weight-bold">
+            <ul class="nav col-11 col-lg-10 pt-3  justify-content-around font-weight-bold">
                 <li class="nav-item">
                     <a href="#" class="nav-link text-white">Навигация</a>
                 </li>
@@ -561,7 +561,6 @@
         </div>
     </div>
 </footer>
-
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

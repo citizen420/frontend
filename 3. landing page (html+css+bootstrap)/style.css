@@ -22,21 +22,18 @@
     background-color: #282828;
     cursor: pointer;
 }
-/* .services {
-    background-color: #f9f9f9;
-} */
 .about-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 5em;
     font-weight: bold;
     text-align: center;
-    /* position: absolute;
-    top: -1.3em; */
     color: rgb(230, 0, 0);
     text-shadow: 2px 3px 5px #c5c5c5;
     padding: -1em 0;
 }
-
+.create-site {
+    font-size: 2.5em;
+}
   
 .card-img-top {
     cursor: pointer;
@@ -51,12 +48,10 @@
 }
 /* поработать с позиционированием фона */
 .bg-header {
-    background-image: url("img/london-3529954_1920.jpg");
-    background-position: top;
-    background-repeat: no-repeat;
+    background: url("img/london-3529954_1920.jpg") no-repeat top;
     margin-top: -1.8em;
-    padding-top: 10em;
-    padding-bottom: 15em;
+    padding-top: 13em;
+    padding-bottom: 18em;
     z-index: -1;
     position: relative;
     
@@ -69,6 +64,7 @@
 }
 .btn {
     padding: 1em 2em;
+    cursor: pointer;
 }
 
 .a-services { 
@@ -88,7 +84,6 @@
     opacity: 0;
     border-bottom: 5px solid #e60000;
     padding: 2em 1em 2em 2em;
-
 }
 .text-services:hover {
   opacity: 1;
@@ -99,16 +94,6 @@
     background: url('img/circle.png') no-repeat center center;
 
 }
-.grey {
-    background-color: #282828; 
-    border: none;
-    color: #fff;
-    padding: 0.5em 2em;
-}
-.news {
-    width: 90%;
-}
-
 .bdblue {
     border: 2px solid blueviolet;    
 }
@@ -118,12 +103,9 @@
 .orange-text {
     color: #e60000;
 }
-
-
 .advantages {
     background: url("img/bg-our-advantages.jpg") no-repeat center;
     background-size: cover;
-    
 }
 .adv2 {
     background: rgba(0, 0, 0, 0.5);
@@ -143,8 +125,8 @@ input[type="checkbox"]:not(:checked) + label {
 input[type="checkbox"]:checked + label:before, 
 input[type="checkbox"]:not(:checked) + label:before {
     position: absolute;
-    left: -2.4em;
-    top: 0.3em;
+    left: -2.8em;
+    top: 0.4em;
     content: "";
     width: 1em;
     height: 1em;
@@ -155,7 +137,7 @@ input[type="checkbox"]:checked + label:after {
     content: "";
     width: 1.3em;
     height: 1.2em;
-    left: -2.5em;
+    left: -2.9em;
     top: 0.1em;
     background: url("img/checked.png") no-repeat center;
     position: absolute;
@@ -181,62 +163,62 @@ input[type="checkbox"]:checked + label:after {
 .absolute {
     position: absolute;
 }
-.stage-work {
-    background-image: url('img/dotted-line.png');
-    background-repeat: no-repeat;
-    background-position: center;
+/* написать медиазапрос который убирает фон
+при достижении определенного разрешения */
+.stage-bg {
+    background: url('img/dotted-line.png') no-repeat center;
 }
-.stage1:after {
-    background-image: url('img/ellipse.png');
-    background-repeat: no-repeat;
+.stage1:before {
+    background: url('img/ellipse.png')no-repeat center;
     content: "1.";
-    right: -3.8em;
-    top: 0;
-    border: 1px solid red;
-    width: 2em;
-    height: 2em;
+    padding: 0.4em 0.3em 0.4em 0.5em;
+    right: 48%;
+    left: 48%;
+    top: -2px;
+    width: 2.5em;
+    height: 2.5em;
     color: white;
     text-align: center;
     font-size: 1em;
     position: absolute;
 }
 .stage2:before {
-    background-image: url('img/ellipse.png');
-    background-repeat: no-repeat;
+    background: url('img/ellipse.png') no-repeat center;
     content: "2.";
-    left: -3.8em;
-    top: 0;
-    border: 1px solid red;
-    width: 2em;
-    height: 2em;
+    padding: 0.4em 0.3em 0.4em 0.5em;
+    left: 48%;
+    right: 48%;
+    top: -2px;
+    width: 2.5em;
+    height: 2.5em;
     color: white;
     text-align: center;
     font-size: 1em;
     position: absolute;
 }
-.stage3:after {
-    background-image: url('img/ellipse.png');
-    background-repeat: no-repeat;
+.stage3:before {
+    background: url('img/ellipse.png') no-repeat center;
     content: "3.";
-    right: -3.8em;
-    top: 0;
-    border: 1px solid red;
-    width: 2em;
-    height: 2em;
+    padding: 0.4em 0.3em 0.4em 0.5em;
+    right: 48%;
+    left: 48%;
+    top: -2px;
+    width: 2.5em;
+    height: 2.5em;
     color: white;
     text-align: center;
     font-size: 1em;
     position: absolute;
 }
 .stage4:before {
-    background-image: url('img/ellipse.png');
-    background-repeat: no-repeat;
+    background: url('img/ellipse.png') no-repeat center;
     content: "4.";
-    left: -3.8em;
-    top: 0;
-    border: 1px solid red;
-    width: 2em;
-    height: 2em;
+    padding: 0.4em 0.3em 0.4em 0.5em;
+    left: 48%;
+    left: 48%;
+    top: -2px;
+    width: 2.5em;
+    height: 2.5em;
     color: white;
     text-align: center;
     font-size: 1em;
@@ -261,6 +243,7 @@ input[type="checkbox"]:checked + label:after {
     content: "";
     position: absolute;
     bottom: 0;
+    left: 0;
     background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
 }
 #mailto {
