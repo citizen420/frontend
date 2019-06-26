@@ -1,0 +1,273 @@
+ * {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+ }
+
+.shadow-box {
+    box-shadow: 3px 3px 7px #888;
+}
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+    font-weight: 700;
+}
+.navbar-brand span {
+    color: #c80202;
+    font-size: 1em;
+    font-weight: 700;
+}
+.nav-item:hover {
+    background-color: #282828;
+    cursor: pointer;
+}
+.about-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(230, 0, 0);
+    text-shadow: 2px 3px 5px #c5c5c5;
+    padding: -1em 0;
+}
+.create-site {
+    font-size: 2.5em;
+}
+  
+.card-img-top {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    background-color:#2a2a2a; 
+}
+.open-sans {
+    font-family: 'Open Sans', sans-serif;
+    color: #282828;
+}
+/* поработать с позиционированием фона */
+.bg-header {
+    background: url("img/london-3529954_1920.jpg") no-repeat top;
+    margin-top: -1.8em;
+    padding-top: 13em;
+    padding-bottom: 18em;
+    z-index: -1;
+    position: relative;
+    
+}
+.orange {
+    background-color: #e60000;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}
+.btn {
+    padding: 1em 2em;
+    cursor: pointer;
+}
+
+.a-services { 
+    display: block;
+    position: relative;
+}
+.text-services {
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    opacity: 1;
+    text-decoration: none;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    border-bottom: 5px solid #e60000;
+    padding: 2em 1em 2em 2em;
+}
+.text-services:hover {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.circle {
+    background: url('img/circle.png') no-repeat center center;
+
+}
+.bdblue {
+    border: 2px solid blueviolet;    
+}
+.bdgreen {
+    border: 1px solid greenyellow;
+}
+.orange-text {
+    color: #e60000;
+}
+.advantages {
+    background: url("img/bg-our-advantages.jpg") no-repeat center;
+    background-size: cover;
+}
+.adv2 {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    opacity: 0;
+}
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    position: absolute;
+    left: -2.8em;
+    top: 0.4em;
+    content: "";
+    width: 1em;
+    height: 1em;
+    border: 1px solid #fff;
+}
+
+input[type="checkbox"]:checked + label:after {
+    content: "";
+    width: 1.3em;
+    height: 1.2em;
+    left: -2.9em;
+    top: 0.1em;
+    background: url("img/checked.png") no-repeat center;
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.mail-ph::placeholder {
+    background: url('img/mail.png') no-repeat center right;
+}
+.phone-ph::placeholder {
+    background: url('img/smphone.png') no-repeat center right;
+    padding-left: 
+}
+.name-ph::placeholder {
+    background: url('img/person.png') no-repeat center right;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+/* написать медиазапрос который убирает фон
+при достижении определенного разрешения */
+.stage-bg {
+    background: url('img/dotted-line.png') no-repeat center;
+}
+.stage1:before {
+    background: url('img/ellipse.png')no-repeat center;
+    content: "1.";
+    padding: 0.4em 0.3em 0.4em 0.5em;
+    right: 48%;
+    left: 48%;
+    top: -2px;
+    width: 2.5em;
+    height: 2.5em;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    position: absolute;
+}
+.stage2:before {
+    background: url('img/ellipse.png') no-repeat center;
+    content: "2.";
+    padding: 0.4em 0.3em 0.4em 0.5em;
+    left: 48%;
+    right: 48%;
+    top: -2px;
+    width: 2.5em;
+    height: 2.5em;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    position: absolute;
+}
+.stage3:before {
+    background: url('img/ellipse.png') no-repeat center;
+    content: "3.";
+    padding: 0.4em 0.3em 0.4em 0.5em;
+    right: 48%;
+    left: 48%;
+    top: -2px;
+    width: 2.5em;
+    height: 2.5em;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    position: absolute;
+}
+.stage4:before {
+    background: url('img/ellipse.png') no-repeat center;
+    content: "4.";
+    padding: 0.4em 0.3em 0.4em 0.5em;
+    left: 48%;
+    left: 48%;
+    top: -2px;
+    width: 2.5em;
+    height: 2.5em;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    position: absolute;
+}
+.reviews {
+    background-color: #f2f0f0;
+}
+.bg-form {
+    background-image: url("img/bg-form.png");
+}
+.contacts {
+    background-color: #2c2c2c;
+}
+.grad-opac {
+    position: relative;
+    overflow: hidden;
+}
+.grad-opac:after {
+    height: 100%;
+    width: 100%;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+}
+#mailto {
+    text-decoration: none;
+    color: #fff;
+}
+.megafon {
+    background: url("img/megafon.png") no-repeat center;
+}
+.tele2 {
+    background: url("img/tele2.png") no-repeat center;
+}
+.mts {
+    background: url("img/mts.png") no-repeat center;
+}
+.next {
+    background: url('img/right.png') no-repeat center;
+}
+.prev {
+    background: url('img/left.png') no-repeat center;
+}
+.carousel-control-prev {
+    width: 2em;
+}
+.carousel-control-next {
+    width: 2em;
+}
