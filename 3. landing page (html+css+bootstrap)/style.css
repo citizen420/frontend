@@ -6,7 +6,7 @@
  }
 
 .shadow-box {
-    box-shadow: 3px 3px 7px #888;
+    box-shadow: 3px 3px 7px #7a7a7a;
 }
 .navbar-brand {
     font-family: 'Open Sans', sans-serif;
@@ -17,6 +17,15 @@
     color: #c80202;
     font-size: 1em;
     font-weight: 700;
+}
+.navbar-toggler-icon {
+    margin: 0.3em 0.2em;
+    height: 2px;
+    opacity: 0.8;
+    width: 22px;
+    display: block;
+    position: relative;
+    background:#fff;
 }
 .nav-item:hover {
     background-color: #282828;
@@ -34,11 +43,26 @@
 .create-site {
     font-size: 2.5em;
 }
-  
+
+.menu a {
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.dropdown-item {
+    padding: 0.5em 3em 0.5em 1em;
+}
+.dropdown-item:hover {
+    background-color: #161515;
+} 
+.dropdown-menu {
+    margin-top: -1px;
+    border-radius: 0px;
+    margin-left: -1px;
+    box-shadow: inset 0 10px 15px -7px  #121212;
+}
 .card-img-top {
     cursor: pointer;
 }
-
 .dropdown-menu {
     background-color:#2a2a2a; 
 }
@@ -54,7 +78,6 @@
     padding-bottom: 18em;
     z-index: -1;
     position: relative;
-    
 }
 .orange {
     background-color: #e60000;
@@ -92,7 +115,6 @@
 
 .circle {
     background: url('img/circle.png') no-repeat center center;
-
 }
 .bdblue {
     border: 2px solid blueviolet;    
@@ -110,7 +132,6 @@
 .adv2 {
     background: rgba(0, 0, 0, 0.5);
 }
-
 input[type="checkbox"]:checked, 
 input[type="checkbox"]:not(:checked) {
     position: absolute;
@@ -132,7 +153,6 @@ input[type="checkbox"]:not(:checked) + label:before {
     height: 1em;
     border: 1px solid #fff;
 }
-
 input[type="checkbox"]:checked + label:after {
     content: "";
     width: 1.3em;
@@ -146,13 +166,13 @@ input[type="checkbox"]:checked + label:after {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
-
+}
 .mail-ph::placeholder {
     background: url('img/mail.png') no-repeat center right;
+    
 }
-.phone-ph::placeholder {
+.phone-ph::placeholder {  
     background: url('img/smphone.png') no-repeat center right;
-    padding-left: 
 }
 .name-ph::placeholder {
     background: url('img/person.png') no-repeat center right;
@@ -160,11 +180,17 @@ input[type="checkbox"]:checked + label:after {
 .relative {
     position: relative;
 }
-.absolute {
+.bubble-text {
     position: absolute;
 }
-/* написать медиазапрос который убирает фон
-при достижении определенного разрешения */
+.plus {
+    position: absolute;
+    top: -2.1em;
+    right: 3.6em;
+    padding: 0.5em 0.8em;
+    background-color: #e60000;
+    border-radius: 3px;
+}
 .stage-bg {
     background: url('img/dotted-line.png') no-repeat center;
 }
@@ -224,9 +250,7 @@ input[type="checkbox"]:checked + label:after {
     font-size: 1em;
     position: absolute;
 }
-.reviews {
-    background-color: #f2f0f0;
-}
+
 .bg-form {
     background-image: url("img/bg-form.png");
 }
@@ -270,4 +294,59 @@ input[type="checkbox"]:checked + label:after {
 }
 .carousel-control-next {
     width: 2em;
+}
+@media screen and (max-width: 1200px) {
+    .bubble-img {
+        display: none;
+    }
+    .plus {
+        display: none;
+    }
+    .bubble-text {
+        position: static;
+        background-color: #fff;
+        box-shadow: 3px 4px 10px #c8c5c5;
+        border-radius: 1em;
+        padding: 1em
+    }
+    /* .search-card-login a{
+        display: none;
+    } */
+}
+@media screen and (max-width: 768px) {
+    .stage-bg {
+        background: none;
+        margin-bottom: 3em;
+    }
+    .site {
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+    .customer-img {
+        position: absolute;
+        opacity: 0;
+    }
+    .bubble-text {
+        position: relative;
+    }
+}
+@media screen and (max-width: 576px) {
+    iframe {
+        display: none;
+    }
+    .carousel a {
+        display: none;
+    }
+
+}
+.underscore {
+    border: 1px solid #c80202;
+    height: 1px;
+    width: 5.5em;
+}
+.underscore-white {
+    border: 1px solid #fff;
+    height: 1px;
+    width: 5.3em;
 }
