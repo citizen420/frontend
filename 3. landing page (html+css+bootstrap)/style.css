@@ -3,15 +3,16 @@
     padding: 0px;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
- }
+}
 
 .shadow-box {
     box-shadow: 3px 3px 7px #7a7a7a;
 }
 .navbar-brand {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6em;
+    font-family: 'Open Sans';
+    font-size: 2em;
     font-weight: 700;
+    letter-spacing: -1px;
 }
 .navbar-brand span {
     color: #c80202;
@@ -27,23 +28,47 @@
     position: relative;
     background:#fff;
 }
+.nav-item a{
+    font-weight: 100;
+}
 .nav-item:hover {
     background-color: #282828;
     cursor: pointer;
 }
 .about-title {
     font-family: 'Open Sans', sans-serif;
-    font-size: 5em;
+    font-size: 71px;
     font-weight: bold;
     text-align: center;
     color: rgb(230, 0, 0);
     text-shadow: 2px 3px 5px #c5c5c5;
-    padding: -1em 0;
+    vertical-align: bottom;
+    line-height: 1em;
+    
+}
+.about-subtitle {
+    font-size: 1.7em;
+    font-weight: 600;
 }
 .create-site {
-    font-size: 2.5em;
+    font-size: 3em;
+    letter-spacing: -1px;
+    line-height: 1.3em;
 }
-
+.create-text {
+    font-size: 16px;
+    letter-spacing: -1px;
+}
+.title_category {
+    letter-spacing: 0px;
+    font-size: 30px;
+}
+.header-text {
+    line-height: 1.4em;
+}
+.header-phone {
+    font-size: 17px;
+}
 .menu a {
     font-size: 1.2em;
     text-decoration: none;
@@ -72,10 +97,9 @@
 }
 /* поработать с позиционированием фона */
 .bg-header {
-    background: url("img/london-3529954_1920.jpg") no-repeat top;
+    background: url("img/london-3529954_1920.jpg") no-repeat center top;
     margin-top: -1.8em;
-    padding-top: 13em;
-    padding-bottom: 18em;
+    padding: 12em 0 26em 0;
     z-index: -1;
     position: relative;
 }
@@ -88,8 +112,24 @@
 .btn {
     padding: 1em 2em;
     cursor: pointer;
+    font-size: 16px;
 }
-
+.btn-long {
+    padding: 0.9em 2.6em;
+    font-size: 17px;
+}
+.btn-reviews {
+    padding: 0.8em 4.1em;
+    font-size: 17px;
+}
+.btn-request {
+    padding: 0.7em 4.1em;
+    font-size: 16px;
+}
+.btn-more {
+    padding: 0.9em 3.2em;
+    background-color: #282828;
+}
 .a-services { 
     display: block;
     position: relative;
@@ -100,13 +140,14 @@
     opacity: 1;
     text-decoration: none;
     color: #fff;
-    height: 100%;
-    width: 100%;
+    height: 98%;
+    width: 101%;
     top: 0;
     left: 0;
     opacity: 0;
+    line-height: 1.5em;
     border-bottom: 5px solid #e60000;
-    padding: 2em 1em 2em 2em;
+    padding: 1.5em 2em 2em 2.2em;
 }
 .text-services:hover {
   opacity: 1;
@@ -117,7 +158,7 @@
     background: url('img/circle.png') no-repeat center center;
 }
 .bdblue {
-    border: 2px solid blueviolet;    
+    border: 1px solid blueviolet;    
 }
 .bdgreen {
     border: 1px solid greenyellow;
@@ -131,6 +172,9 @@
 }
 .adv2 {
     background: rgba(0, 0, 0, 0.5);
+}
+.specialist-font {
+    font-size: 16px;
 }
 input[type="checkbox"]:checked, 
 input[type="checkbox"]:not(:checked) {
@@ -146,7 +190,7 @@ input[type="checkbox"]:not(:checked) + label {
 input[type="checkbox"]:checked + label:before, 
 input[type="checkbox"]:not(:checked) + label:before {
     position: absolute;
-    left: -2.8em;
+    left: -1.8em;
     top: 0.4em;
     content: "";
     width: 1em;
@@ -157,7 +201,7 @@ input[type="checkbox"]:checked + label:after {
     content: "";
     width: 1.3em;
     height: 1.2em;
-    left: -2.9em;
+    left: -2em;
     top: 0.1em;
     background: url("img/checked.png") no-repeat center;
     position: absolute;
@@ -166,16 +210,30 @@ input[type="checkbox"]:checked + label:after {
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
+.mail-ph {
+    
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
 }
 .mail-ph::placeholder {
     background: url('img/mail.png') no-repeat center right;
-    
+    color: #000;
+}
+.phone-ph {
+    padding: 0.8em 1.5em;
+    border-radius: 4px;
 }
 .phone-ph::placeholder {  
     background: url('img/smphone.png') no-repeat center right;
+    color: #000;
+}
+.name-ph {
+    padding: 0.8em  1.5em;
+    border-radius: 4px;
 }
 .name-ph::placeholder {
     background: url('img/person.png') no-repeat center right;
+    color: #000;
 }
 .relative {
     position: relative;
@@ -185,22 +243,23 @@ input[type="checkbox"]:checked + label:after {
 }
 .plus {
     position: absolute;
-    top: -2.1em;
-    right: 3.6em;
-    padding: 0.5em 0.8em;
+    top: -2.2em;
+    right: 4.2em;
+    padding: 0.6em 0.8em;
     background-color: #e60000;
     border-radius: 3px;
 }
 .stage-bg {
-    background: url('img/dotted-line.png') no-repeat center;
+    background: url('img/dotted-line.png') no-repeat bottom;
+
 }
 .stage1:before {
     background: url('img/ellipse.png')no-repeat center;
     content: "1.";
     padding: 0.4em 0.3em 0.4em 0.5em;
-    right: 48%;
+    right: 47%;
     left: 48%;
-    top: -2px;
+    top: 0px;
     width: 2.5em;
     height: 2.5em;
     color: white;
@@ -214,7 +273,7 @@ input[type="checkbox"]:checked + label:after {
     padding: 0.4em 0.3em 0.4em 0.5em;
     left: 48%;
     right: 48%;
-    top: -2px;
+    top: 17px;
     width: 2.5em;
     height: 2.5em;
     color: white;
@@ -228,7 +287,7 @@ input[type="checkbox"]:checked + label:after {
     padding: 0.4em 0.3em 0.4em 0.5em;
     right: 48%;
     left: 48%;
-    top: -2px;
+    top: 17px;
     width: 2.5em;
     height: 2.5em;
     color: white;
@@ -242,7 +301,7 @@ input[type="checkbox"]:checked + label:after {
     padding: 0.4em 0.3em 0.4em 0.5em;
     left: 48%;
     left: 48%;
-    top: -2px;
+    top: -7px;
     width: 2.5em;
     height: 2.5em;
     color: white;
@@ -252,7 +311,7 @@ input[type="checkbox"]:checked + label:after {
 }
 
 .bg-form {
-    background-image: url("img/bg-form.png");
+    background: url("img/bg-form.png") no-repeat top;
 }
 .contacts {
     background-color: #2c2c2c;
@@ -335,18 +394,74 @@ input[type="checkbox"]:checked + label:after {
     iframe {
         display: none;
     }
-    .carousel a {
+    .carousel {
         display: none;
     }
+
 
 }
 .underscore {
     border: 1px solid #c80202;
     height: 1px;
-    width: 5.5em;
+    width: 5.7em;
 }
 .underscore-white {
     border: 1px solid #fff;
     height: 1px;
-    width: 5.3em;
+    width: 5.8em;
+}
+.underscore-longer {
+    border: 1px solid #c80202;
+    height: 1px;
+    width: 6.5em;
+}
+.spec-text {
+    line-height: 1.4em;
+}
+.adv-title {
+    font-size: 16px;
+    line-height: 1.3em;
+}
+.adv-text {
+    line-height: 1.4em;
+}
+.portfolio-text {
+    width: 83%;
+    line-height: 1.4;
+    letter-spacing: 0px;
+}
+.news-text {
+    line-height: 1.3em;
+    letter-spacing: 0px;
+    font-size: 14px;
+}
+.comment-title {
+    font-size: 18px;
+    letter-spacing: -1px;
+}
+.text-contact {
+    font-size: 16px;
+    font-weight: 100;
+}
+.contact-us {
+    font-size: 1.2em;
+}
+.contact-us-text {
+    line-height: 17px;
+}
+.bdgrey {
+    border-right: 5px solid #2c2c2c
+}
+.footer-nav {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+.about-text {
+    letter-spacing: -1px;
 }
